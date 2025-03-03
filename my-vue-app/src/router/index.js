@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainLayout from '@/layouts/MainLayout.vue';
+import AppMainLayout from '@/layouts/AppMainLayout.vue';
 import Home from '@/views/Home.vue';
 import About from '@/views/About.vue';
 
 const routes = [
   {
     path: '/',
-    component: MainLayout,
+    component: AppMainLayout,
     children: [
       { path: '', component: Home },
       { path: 'about', component: About },

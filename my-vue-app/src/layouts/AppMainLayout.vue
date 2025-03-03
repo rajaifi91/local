@@ -4,12 +4,15 @@
 <template>
     <div>
       <AppHeader />
+    </div>
 
-      <main class="p-4">
-
+    <div>
       <AppUserForm />
-        <router-view />
-      </main>
+    </div>
+    
+    <router-view />
+
+    <div>
       <AppFooter/>
     </div>
   </template>

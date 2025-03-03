@@ -1,11 +1,25 @@
 <script setup lang="ts">
 </script>
 <template>
-    <footer class="p-4 bg-gray-800 text-white text-center">
-      © 2024 My App
-    </footer>
-  </template>
-  
-  <script setup></script>
-  
-  <style scoped></style>
+  <footer class="footer">
+    <p>&copy; {{ new Date().getFullYear() }} My Vue App. All rights reserved.</p>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: "FooterComponent",
+};
+</script>
+
+<style scoped>
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 10px;
+  width: 1000px;
+}
+</style>
